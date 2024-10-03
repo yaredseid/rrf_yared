@@ -1,0 +1,30 @@
+%%% Table created in Stata by command iebaltab
+%%% (https://github.com/worldbank/ietoolkit)
+%%% (https://dimewiki.worldbank.org/iebaltab)
+%%% The command was specified exactly like this: 
+%%% iebaltab nonfood_cons_usd_w food_cons_usd_w area_acre_w read sick days_sick treat_cost_usd, grpvar(treatment) rowvarlabels format(%9.2f) savecsv("C:/Users/wb484182/0GitHub/rrf_yared/Stata/Outputs/balance") savetex("C:/Users/wb484182/0GitHub/rrf_yared/Stata/Outputs/balance") nonote addnote("Here is my note") replace
+
+\begin{tabular}{@{\extracolsep{5pt}}lcccccc}
+\\[-1.8ex]\hline \hline \\[-1.8ex]
+ & \multicolumn{2}{c}{(1)}  & \multicolumn{2}{c}{(2)}  & \multicolumn{2}{c}{(1)-(2)} \\
+ & \multicolumn{2}{c}{Control}  & \multicolumn{2}{c}{Treatment}  & \multicolumn{2}{c}{Pairwise t-test}  \\
+Variable & N & Mean/(SE) & N & Mean/(SE) & N & Mean difference \\ \hline \\[-1.8ex] 
+Annual non-food consumption value (USD) (Winsorized 0.05)   & 878    & 51.12    & 880    & 42.34    & 1758    & 8.78***   \\
+ &   & (1.91)  &   & (1.69)  &   &  \\ [1ex]
+Annual food consumption value (USD) (Winsorized 0.05)   & 878    & 235.41    & 880    & 220.30    & 1758    & 15.11**   \\
+ &   & (5.64)  &   & (5.22)  &   &  \\ [1ex]
+Area farmed in acres (Winsorized 0.05)   & 807    & 1.77    & 813    & 1.84    & 1620    & -0.07   \\
+ &   & (0.04)  &   & (0.05)  &   &  \\ [1ex]
+Any member can read/write   & 878    & 0.54    & 879    & 0.53    & 1757    & 0.02   \\
+ &   & (0.02)  &   & (0.02)  &   &  \\ [1ex]
+Any member sick in the lasy 4 weeks   & 878    & 0.44    & 880    & 0.45    & 1758    & -0.01   \\
+ &   & (0.02)  &   & (0.02)  &   &  \\ [1ex]
+Average sick days   & 386    & 10.99    & 394    & 10.23    & 780    & 0.76   \\
+ &   & (0.45)  &   & (0.40)  &   &  \\ [1ex]
+Total cost of treatment (USD)   & 306    & 1.57    & 325    & 1.56    & 631    & 0.01   \\
+ &   & (0.30)  &   & (0.41)  &   &  \\ [1ex]
+\hline \hline \\[-1.8ex]
+%%% This is the note. If it does not have the correct margins, use texnotewidth() option or change the number before '\textwidth' in line below to fit it to table size.
+\multicolumn{6}{@{} p{\textwidth}}{Here is my note}
+
+\end{tabular}
